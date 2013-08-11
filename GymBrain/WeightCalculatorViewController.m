@@ -17,7 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _calculate = [[WeightCalculator alloc] init];
+    _calculate = [[Weight alloc] init];
 
 }
 

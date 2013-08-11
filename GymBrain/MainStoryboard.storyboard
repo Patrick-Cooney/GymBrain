@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Round Counter View Controller - Round Counter-->
+        <!--Round Counter View Controller - Rounds-->
         <scene sceneID="YFb-PL-FgV">
             <objects>
                 <viewController id="G81-oD-L7t" customClass="RoundCounterViewController" sceneMemberID="viewController">
@@ -28,7 +28,7 @@
                             <constraint firstAttribute="trailing" secondItem="cSo-5a-ZLD" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="pCC-Gf-zL9"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Round Counter" id="lDl-BC-x44"/>
+                    <tabBarItem key="tabBarItem" title="Rounds" id="lDl-BC-x44"/>
                     <connections>
                         <outlet property="roundCount" destination="cSo-5a-ZLD" id="C0W-mr-0lc"/>
                     </connections>
@@ -380,7 +380,7 @@
                             <constraint firstItem="TQE-op-A8C" firstAttribute="leading" secondItem="xEr-jD-gDA" secondAttribute="leading" constant="121" id="zyt-Kc-KEd"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Weight Calculator" id="Yyc-cu-XMs"/>
+                    <tabBarItem key="tabBarItem" title="Weights" id="Yyc-cu-XMs"/>
                     <connections>
                         <outlet property="FourtyFivePoundBar" destination="7z6-ul-Hn8" id="6H7-uF-Hn0"/>
                         <outlet property="addFive" destination="TQE-op-A8C" id="WFE-Mn-dHz"/>

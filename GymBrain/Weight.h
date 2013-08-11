@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WeightCalculator : NSObject
+@interface Weight : NSObject
 
 @property float currentWeight;
 @property (nonatomic, strong) NSMutableArray *weightLog;

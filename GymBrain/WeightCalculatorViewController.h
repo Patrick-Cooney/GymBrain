@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WeightCalculator.h"
+#import "Weight.h"
 
 @interface WeightCalculatorViewController : UIViewController
 
-@property WeightCalculator *calculate;
+@property Weight *calculate;
 
 //labels
 ///////////////////

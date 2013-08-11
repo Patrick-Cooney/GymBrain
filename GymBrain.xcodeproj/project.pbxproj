@@ -18,7 +18,7 @@
 		A56F822917B723C9007AA716 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A56F822817B723C9007AA716 /* Default@2x.png */; };
 		A56F822B17B723C9007AA716 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A56F822A17B723C9007AA716 /* Default-568h@2x.png */; };
 		A56F823917B724F9007AA716 /* WeightCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A56F823617B724F9007AA716 /* WeightCalculatorViewController.m */; };
-		A56F823A17B724F9007AA716 /* WeightCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = A56F823817B724F9007AA716 /* WeightCalculator.m */; };
+		A56F823A17B724F9007AA716 /* Weight.m in Sources */ = {isa = PBXBuildFile; fileRef = A56F823817B724F9007AA716 /* Weight.m */; };
 		A576568F17B734CE00A440FD /* Round.m in Sources */ = {isa = PBXBuildFile; fileRef = A576568C17B734CE00A440FD /* Round.m */; };
 		A576569017B734CE00A440FD /* RoundCounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A576568E17B734CE00A440FD /* RoundCounterViewController.m */; };
 /* End PBXBuildFile section */
@@ -40,8 +40,8 @@
 		A56F822A17B723C9007AA716 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A56F823517B724F9007AA716 /* WeightCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightCalculatorViewController.h; sourceTree = "<group>"; };
 		A56F823617B724F9007AA716 /* WeightCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightCalculatorViewController.m; sourceTree = "<group>"; };
-		A56F823717B724F9007AA716 /* WeightCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightCalculator.h; sourceTree = "<group>"; };
-		A56F823817B724F9007AA716 /* WeightCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightCalculator.m; sourceTree = "<group>"; };
+		A56F823717B724F9007AA716 /* Weight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weight.h; sourceTree = "<group>"; };
+		A56F823817B724F9007AA716 /* Weight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weight.m; sourceTree = "<group>"; };
 		A576568B17B734CE00A440FD /* Round.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Round.h; sourceTree = "<group>"; };
 		A576568C17B734CE00A440FD /* Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Round.m; sourceTree = "<group>"; };
 		A576568D17B734CE00A440FD /* RoundCounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundCounterViewController.h; sourceTree = "<group>"; };
@@ -124,8 +124,8 @@
 			children = (
 				A576568B17B734CE00A440FD /* Round.h */,
 				A576568C17B734CE00A440FD /* Round.m */,
-				A56F823717B724F9007AA716 /* WeightCalculator.h */,
-				A56F823817B724F9007AA716 /* WeightCalculator.m */,
+				A56F823717B724F9007AA716 /* Weight.h */,
+				A56F823817B724F9007AA716 /* Weight.m */,
 			);
 			name = Brain;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 				A56F822117B723C9007AA716 /* main.m in Sources */,
 				A56F822517B723C9007AA716 /* AppDelegate.m in Sources */,
 				A56F823917B724F9007AA716 /* WeightCalculatorViewController.m in Sources */,
-				A56F823A17B724F9007AA716 /* WeightCalculator.m in Sources */,
+				A56F823A17B724F9007AA716 /* Weight.m in Sources */,
 				A576568F17B734CE00A440FD /* Round.m in Sources */,
 				A576569017B734CE00A440FD /* RoundCounterViewController.m in Sources */,
 			);

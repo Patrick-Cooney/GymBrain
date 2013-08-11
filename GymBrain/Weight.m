@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Patrick Cooney. All rights reserved.
 //
 
-#import "WeightCalculator.h"
+#import "Weight.h"
 
-@implementation WeightCalculator
+@implementation Weight
 
 
 - (void)addWeight:(float)weight {
