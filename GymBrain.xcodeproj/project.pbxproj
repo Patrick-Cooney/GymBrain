@@ -41,10 +41,10 @@
 		A56F822A17B723C9007AA716 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A56F823517B724F9007AA716 /* WeightCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightCalculatorViewController.h; sourceTree = "<group>"; };
 		A56F823617B724F9007AA716 /* WeightCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightCalculatorViewController.m; sourceTree = "<group>"; };
-		A56F823717B724F9007AA716 /* Weight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weight.h; sourceTree = "<group>"; };
-		A56F823817B724F9007AA716 /* Weight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weight.m; sourceTree = "<group>"; };
-		A576568B17B734CE00A440FD /* Round.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Round.h; sourceTree = "<group>"; };
-		A576568C17B734CE00A440FD /* Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Round.m; sourceTree = "<group>"; };
+		A56F823717B724F9007AA716 /* Weight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Weight.h; path = Classes/Weight.h; sourceTree = "<group>"; };
+		A56F823817B724F9007AA716 /* Weight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Weight.m; path = Classes/Weight.m; sourceTree = "<group>"; };
+		A576568B17B734CE00A440FD /* Round.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Round.h; path = Classes/Round.h; sourceTree = "<group>"; };
+		A576568C17B734CE00A440FD /* Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Round.m; path = Classes/Round.m; sourceTree = "<group>"; };
 		A576568D17B734CE00A440FD /* RoundCounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundCounterViewController.h; sourceTree = "<group>"; };
 		A576568E17B734CE00A440FD /* RoundCounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundCounterViewController.m; sourceTree = "<group>"; };
 		A5A8404217BD9B6300ADC1AE /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = Classes/Timer.h; sourceTree = "<group>"; };
