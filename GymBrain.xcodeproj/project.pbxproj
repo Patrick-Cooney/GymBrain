@@ -21,6 +21,7 @@
 		A56F823A17B724F9007AA716 /* Weight.m in Sources */ = {isa = PBXBuildFile; fileRef = A56F823817B724F9007AA716 /* Weight.m */; };
 		A576568F17B734CE00A440FD /* Round.m in Sources */ = {isa = PBXBuildFile; fileRef = A576568C17B734CE00A440FD /* Round.m */; };
 		A576569017B734CE00A440FD /* RoundCounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A576568E17B734CE00A440FD /* RoundCounterViewController.m */; };
+		A5A8404417BD9B6300ADC1AE /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A8404317BD9B6300ADC1AE /* Timer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		A576568C17B734CE00A440FD /* Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Round.m; sourceTree = "<group>"; };
 		A576568D17B734CE00A440FD /* RoundCounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundCounterViewController.h; sourceTree = "<group>"; };
 		A576568E17B734CE00A440FD /* RoundCounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundCounterViewController.m; sourceTree = "<group>"; };
+		A5A8404217BD9B6300ADC1AE /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = Classes/Timer.h; sourceTree = "<group>"; };
+		A5A8404317BD9B6300ADC1AE /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Timer.m; path = Classes/Timer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 		A56F823B17B725DD007AA716 /* Brain */ = {
 			isa = PBXGroup;
 			children = (
+				A5A8404217BD9B6300ADC1AE /* Timer.h */,
+				A5A8404317BD9B6300ADC1AE /* Timer.m */,
 				A576568B17B734CE00A440FD /* Round.h */,
 				A576568C17B734CE00A440FD /* Round.m */,
 				A56F823717B724F9007AA716 /* Weight.h */,
@@ -202,6 +207,7 @@
 				A56F823A17B724F9007AA716 /* Weight.m in Sources */,
 				A576568F17B734CE00A440FD /* Round.m in Sources */,
 				A576569017B734CE00A440FD /* RoundCounterViewController.m in Sources */,
+				A5A8404417BD9B6300ADC1AE /* Timer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

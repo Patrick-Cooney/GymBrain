@@ -8,11 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "Round.h"
+#import "Timer.h"
 
-@interface RoundCounterViewController : UIViewController
+@interface RoundCounterViewController : UIViewController {
+    int taps;
+}
 
 @property Round *thisRound;
+@property Timer *intervalTimer;
 @property (strong, nonatomic) IBOutlet UILabel *roundCount;
+@property (strong, nonatomic) IBOutlet UILabel *intervalLabel;
 
 - (void)updateRoundCounter;
 - (void)screenWasTapped;
