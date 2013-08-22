@@ -10,12 +10,9 @@
 #import "Round.h"
 #import "Timer.h"
 
-@interface RoundCounterViewController : UIViewController {
-    int taps;
-}
+@interface RoundCounterViewController : UIViewController
 
 @property Round *thisRound;
-@property Timer *intervalTimer;
 @property (strong, nonatomic) IBOutlet UILabel *roundCount;
 @property (strong, nonatomic) IBOutlet UILabel *intervalLabel;
 
