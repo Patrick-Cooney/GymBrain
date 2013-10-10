@@ -45,21 +45,21 @@
 
 
 - (void)screenWasTapped { // this is the method called by the tap recognizer
-    if(!_thisRound){
-        _thisRound = [[Round alloc] init];
+    if(!self.thisRound){
+        self.thisRound = [[Round alloc] init];
     }
     
-    [_thisRound incrementRound];
+    [self.thisRound incrementRound];
     [self updateRoundCounter];
 }
 
 - (void)updateRoundCounter{
-    self.roundCount.text = [NSString stringWithFormat:@"%i", _thisRound.currentRound];
+    self.roundCount.text = [NSString stringWithFormat:@"%i", self.thisRound.currentRound];
     self.roundCount.textAlignment = NSTextAlignmentCenter;
 }
 
 - (void)resetCount {
-    [_thisRound reset];
+    [self.thisRound reset];
     self.intervalLabel.text = [NSString stringWithFormat:@""];
     [self updateRoundCounter];
 }

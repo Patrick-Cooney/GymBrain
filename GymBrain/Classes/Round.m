@@ -13,12 +13,12 @@
 
 - (void)incrementRound{
     
-    _currentRound += 1;
+    self.currentRound += 1;
     
 }
 
 - (void)reset{
-    _currentRound = 0;
+    self.currentRound = 0;
 }
 
 @end

@@ -14,10 +14,11 @@
 
 @implementation WeightCalculatorViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _calculate = [[Weight alloc] init];
+    self.calculate = [[Weight alloc] init];
 
 }
 
@@ -28,55 +29,55 @@
 }
 
 - (void) updateCurrentWeightLabel {
-    self.weightLabel.text = [NSString stringWithFormat:@"%.0f", _calculate.currentWeight];
+    self.weightLabel.text = [NSString stringWithFormat:@"%.0f", self.calculate.currentWeight];
 }
 
 - (void) resetWeightLog {
     
     //set all labels to blank strings
-    _labelSetOne.text = @"";
-    _labelSetTwo.text = @"";
-    _labelSetThree.text = @"";
-    _labelSetFour.text = @"";
-    _labelSetFive.text = @"";
-    _labelSetSix.text = @"";
-    _labelSetSeven.text = @"";
-    _labelSetEight.text = @"";
+    self.labelSetOne.text = @"";
+    self.labelSetTwo.text = @"";
+    self.labelSetThree.text = @"";
+    self.labelSetFour.text = @"";
+    self.labelSetFive.text = @"";
+    self.labelSetSix.text = @"";
+    self.labelSetSeven.text = @"";
+    self.labelSetEight.text = @"";
 }
 
 - (void) updateWeightLogLabel:(UILabel *)label{
-    label.text = [NSString stringWithFormat:@"%.0f", _calculate.currentWeight];
+    label.text = [NSString stringWithFormat:@"%.0f", self.calculate.currentWeight];
 }
 
 - (void) displayWeightLog {
-    NSUInteger arrayCount = _calculate.weightLog.count;
+    NSUInteger arrayCount = self.calculate.weightLog.count;
     switch (arrayCount) {
         case 0:
             //do nothing
             break;
         case 1:
-            [self updateWeightLogLabel:_labelSetOne];
+            [self updateWeightLogLabel:self.labelSetOne];
             break;
         case 2:
-            [self updateWeightLogLabel:_labelSetTwo];
+            [self updateWeightLogLabel:self.labelSetTwo];
             break;
         case 3:
-            [self updateWeightLogLabel:_labelSetThree];
+            [self updateWeightLogLabel:self.labelSetThree];
             break;
         case 4:
-            [self updateWeightLogLabel:_labelSetFour];
+            [self updateWeightLogLabel:self.labelSetFour];
             break;
         case 5:
-            [self updateWeightLogLabel:_labelSetFive];
+            [self updateWeightLogLabel:self.labelSetFive];
             break;
         case 6:
-           [self updateWeightLogLabel:_labelSetSix];
+           [self updateWeightLogLabel:self.labelSetSix];
             break;
         case 7:
-            [self updateWeightLogLabel:_labelSetSeven];
+            [self updateWeightLogLabel:self.labelSetSeven];
             break;
         case 8:
-            [self updateWeightLogLabel:_labelSetEight];
+            [self updateWeightLogLabel:self.labelSetEight];
             break;
         default:
             break;
@@ -86,66 +87,66 @@
     and drop the oldest set off the screen */
     
     if(arrayCount > 8){
-        _labelSetOne.text = _labelSetTwo.text;
-        _labelSetTwo.text = _labelSetThree.text;
-        _labelSetThree.text = _labelSetFour.text;
-        _labelSetFour.text = _labelSetFive.text;
-        _labelSetFive.text = _labelSetSix.text;
-        _labelSetSix.text = _labelSetSeven.text;
-        _labelSetSeven.text = _labelSetEight.text;
-        _labelSetEight.text = [NSString stringWithFormat:@"%.0f", _calculate.currentWeight];
+        self.labelSetOne.text = self.labelSetTwo.text;
+        self.labelSetTwo.text = self.labelSetThree.text;
+        self.labelSetThree.text = self.labelSetFour.text;
+        self.labelSetFour.text = self.labelSetFive.text;
+        self.labelSetFive.text = self.labelSetSix.text;
+        self.labelSetSix.text = self.labelSetSeven.text;
+        self.labelSetSeven.text = self.labelSetEight.text;
+        self.labelSetEight.text = [NSString stringWithFormat:@"%.0f", self.calculate.currentWeight];
     }
 }
 
 - (IBAction)logWeight:(id)sender {
-    [_calculate addSetToLog:_calculate.currentWeight];
+    [self.calculate addSetToLog:self.calculate.currentWeight];
     [self displayWeightLog];
 }
 
 - (IBAction)reset:(id)sender {
-    [_calculate reset];
+    [self.calculate reset];
     [self updateCurrentWeightLabel];
     [self resetWeightLog];
 
 }
 
 - (IBAction)addTwoAndAHalfPounds:(id)sender {
-    [_calculate addWeight:2.5];
+    [self.calculate addWeight:2.5];
     [self updateCurrentWeightLabel];
 }
 
 - (IBAction)addFivePounds:(id)sender {
-    [_calculate addWeight:5.0];
+    [self.calculate addWeight:5.0];
     [self updateCurrentWeightLabel];
 }
 
 - (IBAction)addTenPounds:(id)sender {
-    [_calculate addWeight:10.0];
+    [self.calculate addWeight:10.0];
     [self updateCurrentWeightLabel];
 }
 
 - (IBAction)addTwentyFivePounds:(id)sender {
-    [_calculate addWeight:25.0];
+    [self.calculate addWeight:25.0];
     [self updateCurrentWeightLabel];
 }
 
 - (IBAction)addThirtyFivePounds:(id)sender {
-    [_calculate addWeight:35.0];
+    [self.calculate addWeight:35.0];
     [self updateCurrentWeightLabel];
 }
 
 - (IBAction)addFourtyFivePounds:(id)sender {
-    [_calculate addWeight:45.0];
+    [self.calculate addWeight:45.0];
     [self updateCurrentWeightLabel];
 }
 
 - (IBAction)addFifteenPoundBar:(id)sender {
-    [_calculate addBar:15];
+    [self.calculate addBar:15];
     [self updateCurrentWeightLabel];
 }
 
 - (IBAction)addFourtyFivePoundBar:(id)sender {
-    [_calculate addBar:45];
+    [self.calculate addBar:45];
     [self updateCurrentWeightLabel];
 }
 

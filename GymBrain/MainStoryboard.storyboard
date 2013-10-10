@@ -417,12 +417,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2O-NV-EVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16" y="-627"/>
+            <point key="canvasLocation" x="4" y="-657"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="WKy-q5-HF4">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="Ezt-KS-Q0v" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XXG-iP-6sk"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="dst-eg-gaS">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -430,61 +431,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="r1t-4Y-hlH" kind="relationship" relationship="viewControllers" id="sbg-DQ-1Ku"/>
-                        <segue destination="G81-oD-L7t" kind="relationship" relationship="viewControllers" id="c92-uG-WiT"/>
+                        <segue destination="r1t-4Y-hlH" kind="relationship" relationship="viewControllers" id="8qD-ZJ-Sib"/>
+                        <segue destination="G81-oD-L7t" kind="relationship" relationship="viewControllers" id="0LF-yp-IJV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9r-aU-hGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-518" y="-301"/>
+            <point key="canvasLocation" x="-506" y="-309"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="RoundCounterViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RoundCounterViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="intervalLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="roundCount" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WeightCalculatorViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WeightCalculatorViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="addFifteenPoundBar:"/>
-                <relationship kind="action" name="addFivePounds:"/>
-                <relationship kind="action" name="addFourtyFivePoundBar:"/>
-                <relationship kind="action" name="addFourtyFivePounds:"/>
-                <relationship kind="action" name="addTenPounds:"/>
-                <relationship kind="action" name="addThirtyFivePounds:"/>
-                <relationship kind="action" name="addTwentyFivePounds:"/>
-                <relationship kind="action" name="addTwoAndAHalfPounds:"/>
-                <relationship kind="action" name="logWeight:"/>
-                <relationship kind="action" name="reset:"/>
-                <relationship kind="outlet" name="FourtyFivePoundBar" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="addFive" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="addFourtyFive" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="addTen" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="addThirtyFive" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="addTwentyFive" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="addTwoPointFive" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fifteenPoundBar" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="labelSetEight" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelSetFive" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelSetFour" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelSetOne" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelSetSeven" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelSetSix" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelSetThree" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelSetTwo" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="logWeight" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="reset" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="weightLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -12,26 +12,26 @@
 
 
 - (void)addWeight:(float)weight {
-    _currentWeight += (weight * 2);
+    self.currentWeight += (weight * 2);
 }
 
 - (void)addBar:(int)barWeight{
-    _currentWeight = _currentWeight + barWeight;
+    self.currentWeight = _currentWeight + barWeight;
 }
 
 - (void)reset{
-    _currentWeight = 0;
-    [_weightLog removeAllObjects];
+    self.currentWeight = 0;
+    [self.weightLog removeAllObjects];
 }
 
 - (void) addSetToLog:(float)loggableWeight{
     
     NSNumber *objWeight = [NSNumber numberWithFloat:loggableWeight];
-    if(!_weightLog){
-        _weightLog = [[NSMutableArray alloc] init];
+    if(!self.weightLog){
+        self.weightLog = [[NSMutableArray alloc] init];
     }
     
-    [_weightLog addObject:objWeight];
+    [self.weightLog addObject:objWeight];
     
 }
 
