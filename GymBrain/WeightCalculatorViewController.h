@@ -40,6 +40,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *FourtyFivePoundBar;
 @property (strong, nonatomic) IBOutlet UIButton *logWeight;
 
+@property (weak, nonatomic) IBOutlet UISwitch *barSelector;
 
 - (void) updateCurrentWeightLabel;
 - (void) updateWeightLogLabel:(UILabel *)label;

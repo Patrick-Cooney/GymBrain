@@ -166,6 +166,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Patrick Cooney";
+				TargetAttributes = {
+					A56F821017B723C9007AA716 = {
+						DevelopmentTeam = HLE2F6ZAAV;
+					};
+				};
 			};
 			buildConfigurationList = A56F820C17B723C9007AA716 /* Build configuration list for PBXProject "GymBrain" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -288,11 +293,14 @@
 		A56F822F17B723C9007AA716 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GymBrain/GymBrain-Prefix.pch";
 				INFOPLIST_FILE = "GymBrain/GymBrain-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -300,11 +308,14 @@
 		A56F823017B723C9007AA716 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GymBrain/GymBrain-Prefix.pch";
 				INFOPLIST_FILE = "GymBrain/GymBrain-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

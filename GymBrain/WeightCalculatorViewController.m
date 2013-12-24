@@ -149,5 +149,15 @@
     [self.calculate addBar:45];
     [self updateCurrentWeightLabel];
 }
+/*- (IBAction)setBarWeight:(id)sender {
+    
+    if (self.barSelector) {
+        [self.calculate addWeight:45];
+        [self updateCurrentWeightLabel];
+         } else {
+             [self.calculate addWeight:15];
+             [self updateCurrentWeightLabel];
+         }
+} */
 
 @end
