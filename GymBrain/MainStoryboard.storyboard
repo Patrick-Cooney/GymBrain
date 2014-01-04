@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A3017" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Ezt-KS-Q0v">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B3116" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Ezt-KS-Q0v">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Round Counter View Controller - Rounds-->
@@ -121,24 +121,6 @@
                                     <action selector="addFourtyFivePounds:" destination="r1t-4Y-hlH" eventType="touchUpInside" id="oUZ-Tc-uF8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ouh-yx-YhS">
-                                <rect key="frame" x="28" y="203" width="98" height="30"/>
-                                <state key="normal" title="15 lbs bar">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="addFifteenPoundBar:" destination="r1t-4Y-hlH" eventType="touchUpInside" id="Fkf-Pd-vML"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7z6-ul-Hn8">
-                                <rect key="frame" x="195" y="203" width="98" height="30"/>
-                                <state key="normal" title="45 lbs bar">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="addFourtyFivePoundBar:" destination="r1t-4Y-hlH" eventType="touchUpInside" id="kZb-Sp-yie"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ebl-jQ-m6g">
                                 <rect key="frame" x="28" y="269" width="267" height="30"/>
                                 <state key="normal" title="log weight">
@@ -244,19 +226,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="3Jf-jz-lMR">
+                                <rect key="frame" x="68" y="198" width="182" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="15 lbs"/>
+                                    <segment title="45 lbs"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Weights" id="Yyc-cu-XMs"/>
                     <connections>
-                        <outlet property="FourtyFivePoundBar" destination="7z6-ul-Hn8" id="6H7-uF-Hn0"/>
                         <outlet property="addFive" destination="TQE-op-A8C" id="WFE-Mn-dHz"/>
                         <outlet property="addFourtyFive" destination="kiG-VO-UyF" id="M97-Tl-PlM"/>
                         <outlet property="addTen" destination="ndF-hs-Qch" id="cYv-Xt-oVW"/>
                         <outlet property="addThirtyFive" destination="lgw-5V-N8e" id="zp2-sW-kDv"/>
                         <outlet property="addTwentyFive" destination="XPE-6m-MtQ" id="4uf-Fu-9Av"/>
                         <outlet property="addTwoPointFive" destination="RNX-Sh-Y7w" id="Nme-p1-TEM"/>
-                        <outlet property="fifteenPoundBar" destination="ouh-yx-YhS" id="MiK-ZA-FMc"/>
+                        <outlet property="barSelector" destination="3Jf-jz-lMR" id="dag-5h-vWn"/>
                         <outlet property="labelSetEight" destination="Veg-BX-2Rm" id="NCz-s4-wbv"/>
                         <outlet property="labelSetFive" destination="KB2-x1-3tc" id="WWJ-hF-Pgw"/>
                         <outlet property="labelSetFour" destination="Cjn-kJ-xNK" id="oh3-aZ-eax"/>

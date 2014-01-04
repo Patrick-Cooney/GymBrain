@@ -12,8 +12,10 @@
 
 @property float currentWeight;
 @property (nonatomic, strong) NSMutableArray *weightLog;
+@property int selectedBarWeight;
 
 - (void)addWeight:(float)weight;
+- (void)subtractBarWeight:(float)weight;
 - (void)addBar:(int)barWeight;
 - (void)addSetToLog:(float)loggableWeight;
 - (void)reset;

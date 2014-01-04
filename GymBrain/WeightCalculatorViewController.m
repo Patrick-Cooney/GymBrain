@@ -18,7 +18,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     self.calculate = [[Weight alloc] init];
+    
+    [self.barSelector addTarget:self action:@selector(setBarWeight:) forControlEvents:UIControlEventValueChanged];
+    
+    [self.calculate addBar:15];
+    [self updateCurrentWeightLabel];
 
 }
 
@@ -140,24 +146,16 @@
     [self updateCurrentWeightLabel];
 }
 
-- (IBAction)addFifteenPoundBar:(id)sender {
-    [self.calculate addBar:15];
-    [self updateCurrentWeightLabel];
-}
-
-- (IBAction)addFourtyFivePoundBar:(id)sender {
-    [self.calculate addBar:45];
-    [self updateCurrentWeightLabel];
-}
-/*- (IBAction)setBarWeight:(id)sender {
-    
-    if (self.barSelector) {
-        [self.calculate addWeight:45];
+- (IBAction)setBarWeight:(id)sender {
+    if (self.barSelector.selectedSegmentIndex == 1) {
+        [self.calculate subtractBarWeight:15];
+        [self.calculate addBar:45];
         [self updateCurrentWeightLabel];
-         } else {
-             [self.calculate addWeight:15];
-             [self updateCurrentWeightLabel];
-         }
-} */
+    } else{
+        [self.calculate subtractBarWeight:45];
+        [self.calculate addBar:15];
+        [self updateCurrentWeightLabel];
+    }
+}
 
 @end

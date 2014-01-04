@@ -36,11 +36,9 @@
 @property (strong, nonatomic) IBOutlet UIButton *addTwentyFive;
 @property (strong, nonatomic) IBOutlet UIButton *addThirtyFive;
 @property (strong, nonatomic) IBOutlet UIButton *addFourtyFive;
-@property (strong, nonatomic) IBOutlet UIButton *fifteenPoundBar;
-@property (strong, nonatomic) IBOutlet UIButton *FourtyFivePoundBar;
 @property (strong, nonatomic) IBOutlet UIButton *logWeight;
 
-@property (weak, nonatomic) IBOutlet UISwitch *barSelector;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *barSelector;
 
 - (void) updateCurrentWeightLabel;
 - (void) updateWeightLogLabel:(UILabel *)label;

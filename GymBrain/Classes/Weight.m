@@ -15,8 +15,12 @@
     self.currentWeight += (weight * 2);
 }
 
+- (void)subtractBarWeight:(float)weight {
+    self.currentWeight -= weight;
+}
+
 - (void)addBar:(int)barWeight{
-    self.currentWeight = _currentWeight + barWeight;
+    self.currentWeight = self.currentWeight + barWeight;
 }
 
 - (void)reset{
