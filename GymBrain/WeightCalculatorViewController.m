@@ -111,6 +111,11 @@
 
 - (IBAction)reset:(id)sender {
     [self.calculate reset];
+    if (self.barSelector.selectedSegmentIndex == 1) {
+        [self.calculate addBar:45];
+    } else{
+        [self.calculate addBar:15];
+    }
     [self updateCurrentWeightLabel];
     [self resetWeightLog];
 
