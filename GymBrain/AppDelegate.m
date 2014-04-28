@@ -7,12 +7,27 @@
 //
 
 #import "AppDelegate.h"
+#import "WeightCalculatorViewController.h"
+#import "RoundCounterViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+ 
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    WeightCalculatorViewController *weightCalcVC = [[WeightCalculatorViewController alloc] init];
+    RoundCounterViewController *roundCountVC = [[RoundCounterViewController alloc] init];
+    NSArray *controllers = [NSArray arrayWithObjects:weightCalcVC, roundCountVC, nil];
+    tabBarController.viewControllers = controllers;
+    self.window.rootViewController = tabBarController;
+    UITabBarItem *weightCalcTab = [[UITabBarItem alloc] initWithTitle:@"Calculator" image:nil tag:0];
+    UITabBarItem *counterTab = [[UITabBarItem alloc] initWithTitle:@"Rounds" image:nil tag:1];
+    weightCalcVC.tabBarItem = weightCalcTab;
+    roundCountVC.tabBarItem = counterTab;
     
+    
+    [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
     return YES;
 }
 
@@ -28,7 +43,7 @@
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     
-    [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
+    [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -39,6 +54,8 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

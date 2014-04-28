@@ -12,6 +12,7 @@
 @interface WeightCalculatorViewController : UIViewController
 
 @property Weight *calculate;
+@property (nonatomic) UIScrollView *scrollView;
 
 //labels
 ///////////////////
@@ -38,7 +39,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *addFourtyFive;
 @property (strong, nonatomic) IBOutlet UIButton *logWeight;
 
-@property (strong, nonatomic) IBOutlet UISegmentedControl *barSelector;
+@property (strong, nonatomic) UISegmentedControl *barSelector;
 
 - (void) updateCurrentWeightLabel;
 - (void) updateWeightLogLabel:(UILabel *)label;

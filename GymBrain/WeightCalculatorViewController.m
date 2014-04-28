@@ -19,7 +19,26 @@
 {
     [super viewDidLoad];
     
+    CGRect frameSize = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
+    self.scrollView = [[UIScrollView alloc] initWithFrame:frameSize];
+    self.scrollView.contentSize = CGSizeMake(self.view.bounds.size.width * 2, self.view.bounds.size.height);
+    self.scrollView.pagingEnabled = YES;
+    self.scrollView.clipsToBounds = NO;
+    self.scrollView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.scrollView];
+    UIView *calculatorView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+    [self.scrollView addSubview:calculatorView];
+    UIView *totalLoad = [[UIView alloc] initWithFrame:CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+    totalLoad.backgroundColor = [UIColor yellowColor];
+    [self.scrollView addSubview:totalLoad];
+    
+    
     self.calculate = [[Weight alloc] init];
+    
+    
+    self.barSelector = [[UISegmentedControl alloc] initWithItems:@[@"15lb", @"45lb"]];
+    self.barSelector.frame = CGRectMake(68, 198, 182, 29);
+    [calculatorView addSubview:self.barSelector];
     
     [self.barSelector addTarget:self action:@selector(setBarWeight:) forControlEvents:UIControlEventValueChanged];
     

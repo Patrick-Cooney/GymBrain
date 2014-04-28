@@ -17,6 +17,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    
     // allow user to tap anywhere in the view to increment the count
     UITapGestureRecognizer *roundTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(screenWasTapped)];
     roundTapRecognizer.numberOfTapsRequired = 1;
