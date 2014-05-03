@@ -7,17 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A508D7B11914606900CD8227 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A508D7B01914606900CD8227 /* Media.xcassets */; };
 		A5382E9D17B72A8500E586DA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5382E9C17B72A8500E586DA /* MainStoryboard.storyboard */; };
-		A564D3D617D2E04700A3AE7F /* GB_Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A564D3D517D2E04700A3AE7F /* GB_Icon@2x.png */; };
 		A56F821517B723C9007AA716 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56F821417B723C9007AA716 /* UIKit.framework */; };
 		A56F821717B723C9007AA716 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56F821617B723C9007AA716 /* Foundation.framework */; };
 		A56F821917B723C9007AA716 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56F821817B723C9007AA716 /* CoreGraphics.framework */; };
 		A56F821F17B723C9007AA716 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A56F821D17B723C9007AA716 /* InfoPlist.strings */; };
 		A56F822117B723C9007AA716 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A56F822017B723C9007AA716 /* main.m */; };
 		A56F822517B723C9007AA716 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A56F822417B723C9007AA716 /* AppDelegate.m */; };
-		A56F822717B723C9007AA716 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A56F822617B723C9007AA716 /* Default.png */; };
-		A56F822917B723C9007AA716 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A56F822817B723C9007AA716 /* Default@2x.png */; };
-		A56F822B17B723C9007AA716 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A56F822A17B723C9007AA716 /* Default-568h@2x.png */; };
 		A56F823917B724F9007AA716 /* WeightCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A56F823617B724F9007AA716 /* WeightCalculatorViewController.m */; };
 		A56F823A17B724F9007AA716 /* Weight.m in Sources */ = {isa = PBXBuildFile; fileRef = A56F823817B724F9007AA716 /* Weight.m */; };
 		A576568F17B734CE00A440FD /* Round.m in Sources */ = {isa = PBXBuildFile; fileRef = A576568C17B734CE00A440FD /* Round.m */; };
@@ -26,8 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A508D7B01914606900CD8227 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		A5382E9C17B72A8500E586DA /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		A564D3D517D2E04700A3AE7F /* GB_Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GB_Icon@2x.png"; path = "../GB_Icon@2x.png"; sourceTree = "<group>"; };
 		A56F821117B723C9007AA716 /* GymBrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymBrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56F821417B723C9007AA716 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A56F821617B723C9007AA716 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,9 +35,6 @@
 		A56F822217B723C9007AA716 /* GymBrain-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GymBrain-Prefix.pch"; sourceTree = "<group>"; };
 		A56F822317B723C9007AA716 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A56F822417B723C9007AA716 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A56F822617B723C9007AA716 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		A56F822817B723C9007AA716 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		A56F822A17B723C9007AA716 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A56F823517B724F9007AA716 /* WeightCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightCalculatorViewController.h; sourceTree = "<group>"; };
 		A56F823617B724F9007AA716 /* WeightCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightCalculatorViewController.m; sourceTree = "<group>"; };
 		A56F823717B724F9007AA716 /* Weight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Weight.h; path = Classes/Weight.h; sourceTree = "<group>"; };
@@ -73,6 +67,7 @@
 				A56F821A17B723C9007AA716 /* GymBrain */,
 				A56F821317B723C9007AA716 /* Frameworks */,
 				A56F821217B723C9007AA716 /* Products */,
+				A508D7B01914606900CD8227 /* Media.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,14 +108,10 @@
 		A56F821B17B723C9007AA716 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A564D3D517D2E04700A3AE7F /* GB_Icon@2x.png */,
 				A56F821C17B723C9007AA716 /* GymBrain-Info.plist */,
 				A56F821D17B723C9007AA716 /* InfoPlist.strings */,
 				A56F822017B723C9007AA716 /* main.m */,
 				A56F822217B723C9007AA716 /* GymBrain-Prefix.pch */,
-				A56F822617B723C9007AA716 /* Default.png */,
-				A56F822817B723C9007AA716 /* Default@2x.png */,
-				A56F822A17B723C9007AA716 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -195,11 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A56F821F17B723C9007AA716 /* InfoPlist.strings in Resources */,
-				A56F822717B723C9007AA716 /* Default.png in Resources */,
-				A56F822917B723C9007AA716 /* Default@2x.png in Resources */,
-				A56F822B17B723C9007AA716 /* Default-568h@2x.png in Resources */,
+				A508D7B11914606900CD8227 /* Media.xcassets in Resources */,
 				A5382E9D17B72A8500E586DA /* MainStoryboard.storyboard in Resources */,
-				A564D3D617D2E04700A3AE7F /* GB_Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +281,17 @@
 		A56F822F17B723C9007AA716 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GymBrain/GymBrain-Prefix.pch";
 				INFOPLIST_FILE = "GymBrain/GymBrain-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -308,14 +299,17 @@
 		A56F823017B723C9007AA716 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GymBrain/GymBrain-Prefix.pch";
 				INFOPLIST_FILE = "GymBrain/GymBrain-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

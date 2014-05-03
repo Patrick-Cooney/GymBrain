@@ -19,12 +19,15 @@
 {
     [super viewDidLoad];
     
-    self.calculate = [[Weight alloc] init];
+    if (!self.calculate) {
+        self.calculate = [[Weight alloc] init];
+    }
     
     [self.barSelector addTarget:self action:@selector(setBarWeight:) forControlEvents:UIControlEventValueChanged];
     
     [self.calculate addBar:15];
     [self updateCurrentWeightLabel];
+    
 
 }
 
