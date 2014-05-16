@@ -273,7 +273,6 @@
                         <outlet property="labelSetTwo" destination="zrr-r3-jWG" id="wTK-sz-QCN"/>
                         <outlet property="logWeight" destination="ebl-jQ-m6g" id="8Ad-K1-TeR"/>
                         <outlet property="reset" destination="dEb-MI-dyI" id="JGD-EM-aRV"/>
-                        <outlet property="tbWeights" destination="Yyc-cu-XMs" id="U1k-1a-Cyx"/>
                         <outlet property="weightLabel" destination="gHW-Jf-QKC" id="YVA-Lh-Olu"/>
                     </connections>
                 </viewController>
@@ -307,7 +306,7 @@
         <image name="Reset Icon" width="90" height="107"/>
         <image name="logBG" width="267" height="38"/>
         <image name="rounds" width="32" height="32"/>
-        <image name="weight" width="16" height="16"/>
+        <image name="weight" width="32" height="32"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
